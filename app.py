@@ -9,7 +9,7 @@ app = Flask(__name__)
 CORS(app)
 
 basedir = os.path.abspath(os.path.dirname(__file__))
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:wCAEBd18HyNFkDkW9Lko@containers-us-west-99.railway.app:7944/railway'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:GXjeg3RwUP1SrrYkfGwb@containers-us-west-111.railway.app:7083/railway'
 db = SQLAlchemy(app)
 ma = Marshmallow(app)
 bc = Bcrypt(app)
@@ -74,6 +74,7 @@ def verify():
         return jsonify("User information not verified")
 
     return jsonify("User Verified")
+
 
 
 @app.route('/user/get')
