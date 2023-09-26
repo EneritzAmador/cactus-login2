@@ -1,0 +1,22 @@
+# Virtual environment
+/env/
+
+# Cached files
+__pycache__/
+
+# Logs y archivos de registro
+*.log
+
+# Archivo de ambiente local (si lo tienes)
+.env
+
+# Configuraciones específicas de tu entorno local (si las tienes)
+*.local
+*.ini
+*.cfg
+
+# Archivos de base de datos (si no quieres rastrear las bases de datos localmente)
+*.db
+
+#archivos instance
+/instance/
