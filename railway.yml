@@ -1,0 +1,12 @@
+version: '1'
+services:
+  web:
+    image: python:3.8
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: python app.py
+    ports:
+      - 8080:8080
+    env:
+      - DATABASE_URL=${{DATABASE_URL}}
